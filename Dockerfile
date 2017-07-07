@@ -5,9 +5,9 @@ WORKDIR /tmp
  
 RUN apk add --no-cache alpine-sdk git
 
-RUN git clone git://github.com/antirez/dump1090.git && \
- cd dump1090 && \
- make
+RUN git clone git://github.com/mutability/dump1090.git && \
+    cd dump1090 && \
+    make
  
 WORKDIR /tmp/dump1090
  
